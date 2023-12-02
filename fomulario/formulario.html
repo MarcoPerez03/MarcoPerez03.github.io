@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>CRUD LOCAL JS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <p class="logo"><a href="../principal/index.html">TIENDA-STORE</a></p>
+            <nav>
+                <a href="../principal/index.html">Inicio</a>
+                <a href="../Netflix/index.html">Netflix</a>
+                <a href="../spotify/index.html">Spotify</a>
+                <a href="../disney/index.html">Disney</a>
+                <a href="../hbo/index.html">Hbo Max</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="div-titulo">
+        <h1>Pedidos</h1>
+    </div>
+    
+    <div class="contenedor">
+
+        <div class="div-formulario">
+            <h2>Formulario</h2>
+
+            <form action="#" id="formulario">
+                <!-- <input type="text" id="nombre" placeholder="Ingresa el producto">
+                <input type="text" id="puesto" placeholder="Ingresa la cantidad">
+                <button type="submit" id="btnAgregar">Agregar</button> -->
+                <select name="nombre" id="nombre">
+                    <option disabled selected="" value="">Elija Un Productos</option>
+                    <option value="Netflix">Netflix</option>
+                    <option value="Spotify">Spotify</option>
+                    <option value="Disney">Disney Plus</option>
+                    <option value="Hbo Max">Hbo Max</option>
+                </select>
+
+                <select name="puesto" id="puesto">
+                    <option disabled selected="" value="">Elija Los Meses</option>
+                    <option value="1 Mes">1 Mes</option>
+                    <option value="2 Meses">2 Meses</option>
+                    <option value="3 Meses">3 Meses</option>
+                </select>
+
+                <select name="dispositivos" id="dispositivos">
+                    <option disabled selected="" value="">Dispositivos</option>
+                    <option value="1 Dispositivo">1 Dispositivo</option>
+                    <option value="2 Dispositivos">2 Dispositivos</option>
+                    <option value="3 Dispositivos">3 Dispositivos</option>
+                </select>
+                <button type="submit" id="btnAgregar">Agregar</button>
+            </form>
+        </div>
+
+        <div class="div-listado">
+            <h2>Listado de Pedidos</h2>
+            <div class="div-empleados">
+                
+            </div>
+            <button type="submit" id="btnSolicitar">Solicitar</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
